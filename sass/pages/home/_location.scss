@@ -1,0 +1,85 @@
+.location
+{
+    &__search-bar
+    {
+        @extend %flex-center;
+        padding: calc(var(--spacing)/2);
+        background-color: map-get($colors, location-bg);
+        z-index: 1;
+        text-align: center;
+
+        @include wide-screen
+        {
+            background: linear-gradient(to right, map-get($colors, location-bg), map-get($colors, section-bg));
+        }
+
+        &::after
+        {
+            display: block;
+            content: '';
+        }
+
+        &::after, .fas
+        {
+            width: calc(var(--spacing)/1.2);
+            height: calc(var(--spacing)/1.2);
+        }
+
+        .fas
+        {
+            @extend %flex-center;
+        }
+        
+        input
+        {
+            padding: calc(var(--spacing)/2);
+            width: calc(var(--spacing)*8);
+            border: none;
+            appearance: none;
+            -webkit-appearance: none;
+            background-color: unset;
+            color: lighten(map-get($colors, font), 35%);
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    &__submit-div
+    {
+        padding: var(--spacing);
+        padding-bottom: calc(var(--spacing)*2.5);
+        background-color: map-get($colors, section-bg);
+        text-align: center;
+
+        @include wide-screen
+        {
+            padding: calc(var(--spacing)/2);
+            background: #fff;
+        }
+
+        h2
+        {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        p
+        {
+            margin-top: calc(var(--spacing)/1.2);
+            margin-bottom: calc(var(--spacing)*1.2);
+            opacity: .6;
+        }
+    }
+
+    @include wide-screen
+    {
+        flex-basis: 100%;
+        margin-bottom: calc(var(--spacing)*3);
+
+        &__submit-div
+        {
+            background: none;
+        }
+    }
+}
