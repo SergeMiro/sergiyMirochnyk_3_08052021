@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ohmyfood - la palette du goût</title>
@@ -10,12 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/index.css"/>
-
 </head>
 
     <body>
         <div class="container">
-
             <header class="header">
                 <a href="index.html">
                     <i class="fas fa-arrow-left"></i>
@@ -34,6 +30,7 @@
                         </label>
                     </div>
                 </div>
+
                 <form action="#" method="post" class="menu__content">
                     <div class="menu__dishes">
                         <h2>Entrées</h2>
@@ -145,13 +142,10 @@
                             </span>
                         </label>
                     </div>
-                    <!--Disabled submit button because of missing back-end file-->
+                    <!--Bouton d'envoi désactivé car il n'y a pas de fichier back-end selon le P3-->
                     <button type="submit" class="btn btn--wide" disabled>Commander</button>
                 </form>
-
             </section>
-
-
 
             <footer class="footer">
                 <h3>ohmyfood</h3>
@@ -170,12 +164,18 @@
                     </ul>
                 </nav>
             </footer>
-
         </div>
 
-        <!-- script tag added to prevent onload fired transitions in chrome / bug fix -->
+<!-- il s’agit bien d’un bug de Chrome.
+Le Problème vient du chargement du contenu importé dans les balises link par le navigateur. 
+Chrome fait une interprétation de la transition entre le style de base et le style modifié par le fichier css.
+Chose qu’il ne fait pas si on écrit le style directement dans le html avec les balises <style>...</style>
+    La solution:
+Il faut mettre une balise <script>...</script> dans le HTML pour modifier l’ordre de chargement dès fichiers par chrome. 
+Du coup ce bug n’est visible uniquement lorsqu’on utilise une page composée seulement de html et css chargé en link. 
+Cas très rare de nos jours car on utilise presque tout le temps du JavaScript. 
+Mais vu que dans ce PROJET-3 nous utilisons pas encore du JS, alors nous pouvons avoir ce probléme de transition ici.
+        https://stackoverflow.com/questions/14389566/stop-css-transition-from-firing-on-page-load -->
         <script> </script>
-
     </body>
-
 </html>
