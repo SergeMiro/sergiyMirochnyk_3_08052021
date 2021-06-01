@@ -10,12 +10,12 @@
           align-items: center;
 }
 
-.loader__spinner::after, .operation__card, .restaurant__card, .menu__content label {
+.loader__spinner::after, .operation__card, .restaurant__card1,.restaurant__card2,.restaurant__card3,.restaurant__card4, .menu__content label {
   -webkit-box-shadow: 0px 5px 14px rgba(180, 180, 180, 0.5);
           box-shadow: 0px 5px 14px rgba(180, 180, 180, 0.5);
 }
 
-@-webkit-keyframes smooth-cards {
+                                                          @-webkit-keyframes smooth-cards {
   from {
     -webkit-transform: translateY(calc(var(--spacing)*1.5));
             transform: translateY(calc(var(--spacing)*1.5));
@@ -28,7 +28,7 @@
   }
 }
 
-@keyframes smooth-cards {
+                                                            @keyframes smooth-cards {
   from {
     -webkit-transform: translateY(calc(var(--spacing)*1.5));
             transform: translateY(calc(var(--spacing)*1.5));
@@ -41,7 +41,7 @@
   }
 }
 
-@-webkit-keyframes loader-animation {
+                                                            @-webkit-keyframes loader-animation {
   5% {
     opacity: 1;
   }
@@ -57,7 +57,7 @@
   }
 }
 
-@keyframes loader-animation {
+                                                              @keyframes loader-animation {
   5% {
     opacity: 1;
   }
@@ -73,7 +73,7 @@
   }
 }
 
-@-webkit-keyframes loader-spinner {
+                                                              @-webkit-keyframes loader-spinner {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -88,7 +88,7 @@
   }
 }
 
-@keyframes loader-spinner {
+                                                                @keyframes loader-spinner {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -103,7 +103,7 @@
   }
 }
 
-@-webkit-keyframes loader-logo {
+                                                                @-webkit-keyframes loader-logo {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -118,7 +118,7 @@
   }
 }
 
-@keyframes loader-logo {
+                                                                @keyframes loader-logo {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -133,7 +133,7 @@
   }
 }
 
-@-webkit-keyframes loader-dots {
+                                                                @-webkit-keyframes loader-dots {
   0% {
     opacity: .2;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@keyframes loader-dots {
+                                                                  @keyframes loader-dots {
   0% {
     opacity: .2;
   }
@@ -177,7 +177,7 @@
   font-style: normal;
 }
 
-@media only screen and (min-width: 0px) {
+                                                              @media only screen and (min-width: 0px) {
   :root {
     --spacing: 1rem;
   }
@@ -195,7 +195,7 @@
   }
 }
 
-@media only screen and (min-width: 310px) {
+                                                              @media only screen and (min-width: 310px) {
   :root {
     --spacing: 1.2rem;
   }
@@ -213,7 +213,7 @@
   }
 }
 
-@media only screen and (min-width: 375px) {
+                                                                  @media only screen and (min-width: 375px) {
   :root {
     --spacing: 1.2rem;
   }
@@ -231,7 +231,7 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
+                                                              @media only screen and (min-width: 414px) {
   :root {
     --spacing: 1.3rem;
   }
@@ -249,7 +249,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+                                                              @media only screen and (min-width: 768px) {
   :root {
     --spacing: 1.5rem;
   }
@@ -267,7 +267,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+                                                              @media only screen and (min-width: 1024px) {
   :root {
     --spacing: 1.3rem;
   }
@@ -319,7 +319,7 @@ a {
   width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                          @media only screen and (min-width: 1024px) {
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -335,8 +335,14 @@ a {
 
 section:not(.location):not(.menu), footer {
   padding: var(--spacing);
-  padding-bottom: calc(var(--spacing)*2);
+  padding-bottom: calc(var(--spacing)*2.5);
 }
+
+section {
+  padding-bottom: 50px;
+}
+
+
 
 .loader {
   position: fixed;
@@ -453,7 +459,7 @@ section:not(.location):not(.menu), footer {
   z-index: 2;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                        @media only screen and (min-width: 1024px) {
   .btn:hover::after, .btn:focus::after {
     opacity: .75;
   }
@@ -518,7 +524,7 @@ section:not(.location):not(.menu), footer {
   opacity: 0;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                              @media only screen and (min-width: 1024px) {
   .favorite label:hover .fas {
     opacity: 1;
   }
@@ -546,7 +552,7 @@ section:not(.location):not(.menu), footer {
           transform: translateY(-50%);
 }
 
-@media only screen and (min-width: 1024px) {
+                                                @media only screen and (min-width: 1024px) {
   .header {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -558,7 +564,7 @@ section:not(.location):not(.menu), footer {
   color: #fff;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                 @media only screen and (min-width: 1024px) {
   .footer {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -573,7 +579,7 @@ section:not(.location):not(.menu), footer {
   font-size: 1.3em;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                   @media only screen and (min-width: 1024px) {
   .footer h3 {
     text-align: center;
   }
@@ -587,7 +593,7 @@ section:not(.location):not(.menu), footer {
   max-width: 1.5rem;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                  @media only screen and (min-width: 1024px) {
   .footer .fas {
     display: initial;
   }
@@ -598,7 +604,7 @@ section:not(.location):not(.menu), footer {
   padding: 0;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                  @media only screen and (min-width: 1024px) {
   .footer__link-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -620,7 +626,7 @@ section:not(.location):not(.menu), footer {
   margin: calc(var(--spacing)/2) 0;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                  @media only screen and (min-width: 1024px) {
   .footer__link {
     display: initial;
     margin: 0 calc(var(--spacing)/1.5);
@@ -648,7 +654,7 @@ section:not(.location):not(.menu), footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                    @media only screen and (min-width: 1024px) {
   .location__search-bar {
     background: -webkit-gradient(linear, left top, right top, from(#eaeaea), to(#f6f6f6));
     background: linear-gradient(to right, #eaeaea, #f6f6f6);
@@ -680,12 +686,12 @@ section:not(.location):not(.menu), footer {
 
 .location__submit-div {
   padding: var(--spacing);
-  padding-bottom: calc(var(--spacing)*2.5);
+  padding-bottom: calc(var(--spacing)*2);
   background-color: #f6f6f6;
   text-align: center;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                  @media only screen and (min-width: 1024px) {
   .location__submit-div {
     padding: calc(var(--spacing)/2);
     background: #fff;
@@ -704,11 +710,10 @@ section:not(.location):not(.menu), footer {
   opacity: .6;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                @media only screen and (min-width: 1024px) {
   .location {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-bottom: calc(var(--spacing)*3);
   }
   .location__submit-div {
     background: none;
@@ -750,9 +755,10 @@ section:not(.location):not(.menu), footer {
 
 .operation__card .fas {
   margin-left: calc(var(--spacing)/1.2);
-  opacity: .6;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  color: #9356dc;
+  opacity: 1;
 }
 
 .operation__card p {
@@ -760,7 +766,7 @@ section:not(.location):not(.menu), footer {
 }
 
 .operation__card--purple {
-  background-color: #f2eafb;
+
 }
 
 .operation__card--purple .fas {
@@ -771,7 +777,7 @@ section:not(.location):not(.menu), footer {
   opacity: 1;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                      @media only screen and (min-width: 1024px) {
   .operation {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -793,7 +799,7 @@ section:not(.location):not(.menu), footer {
   background-color: #f6f6f6;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                      @media only screen and (min-width: 1024px) {
   .restaurant {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -812,7 +818,7 @@ section:not(.location):not(.menu), footer {
   }
 }
 
-.restaurant__card {
+.restaurant__card1,.restaurant__card2,.restaurant__card3,.restaurant__card4{
   margin-top: var(--spacing);
   border-radius: 1rem;
   overflow: hidden;
@@ -820,18 +826,42 @@ section:not(.location):not(.menu), footer {
   transition: .3s ease-in-out;
 }
 
-@media only screen and (min-width: 1024px) {
-  .restaurant__card {
+                                                        @media only screen and (min-width: 1024px) {
+   .restaurant__card1,.restaurant__card2,.restaurant__card3,.restaurant__card4 {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .restaurant__card:hover {
+  .restaurant__card1:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
-  .restaurant__card a {
+  .restaurant__card2:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .restaurant__card3:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .restaurant__card4:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .restaurant__card1 a {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .restaurant__card2 a {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .restaurant__card3 a {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .restaurant__card4 a {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
   }
@@ -865,7 +895,7 @@ section:not(.location):not(.menu), footer {
   background-position: 50% 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                      @media only screen and (min-width: 1024px) {
   .restaurant__image {
     position: initial;
   }
@@ -921,7 +951,7 @@ section:not(.location):not(.menu), footer {
   padding: var(--spacing);
 }
 
-@media only screen and (min-width: 1024px) {
+                                                  @media only screen and (min-width: 1024px) {
   .restaurant__info {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
@@ -940,6 +970,7 @@ section:not(.location):not(.menu), footer {
 
 .restaurant__title {
   margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .menu {
@@ -948,7 +979,7 @@ section:not(.location):not(.menu), footer {
   background-position: top;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                  @media only screen and (min-width: 1024px) {
   .menu {
     margin: calc(var(--spacing)*2);
     width: 100%;
@@ -967,7 +998,7 @@ section:not(.location):not(.menu), footer {
   background-position: 50% calc(-65%/5);
 }
 
-@media only screen and (min-width: 1024px) {
+                                                            @media only screen and (min-width: 1024px) {
   .menu__image--lanoteenchentee {
     background-position: 50% 165%;
     background-size: cover;
@@ -1003,31 +1034,31 @@ section:not(.location):not(.menu), footer {
   border-top-right-radius: 3rem;
 }
 
-@media only screen and (min-width: 310px) {
+                                                    @media only screen and (min-width: 310px) {
   .menu__title {
     font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 400px) {
+                                                    @media only screen and (min-width: 400px) {
   .menu__title {
     font-size: 1.8rem;
   }
 }
 
-@media only screen and (min-width: 440px) {
+                                                    @media only screen and (min-width: 440px) {
   .menu__title {
     font-size: 2.1rem;
   }
 }
 
-@media only screen and (min-width: 500px) {
+                                                    @media only screen and (min-width: 500px) {
   .menu__title {
     font-size: 2.3rem;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+                                                    @media only screen and (min-width: 1024px) {
   .menu__title {
     margin-top: 50%;
     width: 500px;
@@ -1052,7 +1083,7 @@ section:not(.location):not(.menu), footer {
   padding-bottom: calc(var(--spacing)*3);
 }
 
-@media only screen and (min-width: 1024px) {
+                                                    @media only screen and (min-width: 1024px) {
   .menu__content {
     padding-top: calc(var(--spacing)*2);
     -webkit-box-orient: horizontal;
@@ -1079,13 +1110,13 @@ section:not(.location):not(.menu), footer {
   opacity: .65;
 }
 
-@media only screen and (min-width: 400px) {
+                                                      @media only screen and (min-width: 400px) {
   .menu__content h2 {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 440px) {
+                                                       @media only screen and (min-width: 440px) {
   .menu__content h2 {
     font-size: 1.4rem;
   }
@@ -1176,7 +1207,7 @@ section:not(.location):not(.menu), footer {
   width: 100%;
 }
 
-@media only screen and (min-width: 1024px) {
+                                                    @media only screen and (min-width: 1024px) {
   .menu__dishes {
     width: 31%;
   }
@@ -1241,4 +1272,23 @@ section:not(.location):not(.menu), footer {
   transition: transform .0s .5s ease-in-out;
   transition: transform .0s .5s ease-in-out, -webkit-transform .0s .5s ease-in-out;
 }
+                             
 
+                                        @media only screen and (max-width: 1023px) {
+.restaurant__card4 {
+  margin-bottom: 35px;
+  }
+
+.btn{
+  margin-top: 9px;
+  margin-bottom: 17px;
+  }
+
+.restaurant h2 {
+  margin-top: 35px;
+  }
+
+.operation{
+  margin-top: -27px;
+  }
+}
