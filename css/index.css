@@ -605,6 +605,7 @@ section {
 }
 
                                                   @media only screen and (min-width: 1024px) {
+
   .footer__link-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -625,6 +626,7 @@ section {
   display: flex;
   margin: calc(var(--spacing)/2) 0;
 }
+
 
                                                   @media only screen and (min-width: 1024px) {
   .footer__link {
@@ -653,6 +655,8 @@ section {
   z-index: 1;
   text-align: center;
 }
+
+
 
                                                     @media only screen and (min-width: 1024px) {
   .location__search-bar {
@@ -690,6 +694,8 @@ section {
   background-color: #f6f6f6;
   text-align: center;
 }
+
+
 
                                                   @media only screen and (min-width: 1024px) {
   .location__submit-div {
@@ -1080,7 +1086,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: calc(var(--spacing)*3);
+  padding-bottom: 0;
 }
 
                                                     @media only screen and (min-width: 1024px) {
@@ -1277,7 +1283,7 @@ section {
                                         @media only screen and (max-width: 1023px) {
 .restaurant__card4 {
   margin-bottom: 35px;
-  }
+  }f
 
 .btn{
   margin-top: 9px;
