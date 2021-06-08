@@ -7,7 +7,8 @@
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+ 
 }
 
 .loader__spinner::after, .operation__card, .restaurant__card1,.restaurant__card2,.restaurant__card3,.restaurant__card4, .menu__content label {
@@ -423,6 +424,7 @@ section {
 .btn {
   position: relative;
   padding: calc(var(--spacing)/1.2) var(--spacing);
+  margin-bottom: 18px;
   border: none;
   border-radius: 50px;
   -webkit-box-shadow: 0px 6px 10px rgba(90, 90, 90, 0.5);
@@ -736,7 +738,7 @@ section {
   margin-left: calc(var(--spacing)/1.5);
   padding: calc(var(--spacing)*1.2);
   border-radius: 1.2rem;
-  background-color: #f6f6f6;
+  background-color: #ffffff;
 }
 
 .operation__card span {
@@ -760,7 +762,7 @@ section {
   margin-left: calc(var(--spacing)/1.2);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  color: #9356dc;
+  color: #878787;
   opacity: 1;
 }
 
