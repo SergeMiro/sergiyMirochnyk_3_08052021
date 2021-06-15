@@ -1378,14 +1378,22 @@ section {
 
 
   .operation__card {
-   color: black;
+   color: grey;
+   font-weight: 600;
   cursor: pointer;
   }
 
+
   .operation__card i.fas {
-    opacity: 0.57;
- 
+    opacity: 1;
    }
+
+   .operation__card p{
+    opacity: 1;
+    color: rgb(54, 52, 52);
+
+   }
+   
 
    .operation__card:hover {
     -webkit-transition: -webkit-transform .4s .1s ease-in-out;
