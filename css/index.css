@@ -1381,6 +1381,7 @@ section {
    color: grey;
    font-weight: 600;
   cursor: pointer;
+  background-color: rgba(195, 130, 238, 0.088);
   }
 
 
@@ -1404,5 +1405,6 @@ section {
             box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
    color: #9356dc;
+   background-color: rgba(202, 149, 238, 0.047);
   }
     }
